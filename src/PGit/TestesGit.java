@@ -13,7 +13,7 @@ public class TestesGit {
 		
 		System.out.println("Bom dia " + n + "!");
 		
-		System.out.println("Teste GitHub");
+		System.out.println("Teste GitHub 2");
 		
 		sc.close();
 	}
