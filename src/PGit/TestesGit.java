@@ -15,6 +15,8 @@ public class TestesGit {
 		
 		System.out.println("Teste GitHub 2");
 		
+		System.out.println("Teste Git desfazer.");
+		
 		sc.close();
 	}
 
