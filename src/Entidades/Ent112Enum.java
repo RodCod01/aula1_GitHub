@@ -5,6 +5,8 @@ import java.util.Date;
 import Entidades_enums.Enum112Enum;
 
 // Order
+//Classe com os construtores dos objetos utilisados na classe principal
+
 
 public class Ent112Enum {
 	
@@ -51,10 +53,4 @@ public class Ent112Enum {
 	public String toString() {
 		return "Ent112Enum [id=" + id + ", moment=" + moment + ", status=" + status + "]";
 	}
-
-	
-	
-	
-	
-
 }

@@ -6,12 +6,14 @@ public class P97Matriz {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		
+		//Declarando as variáveis		
 		int m = sc.nextInt();
 		int n = sc.nextInt();
-		
+
+		//Instanciando a matriz
 		int [][] mat = new int [m][n];
-		
+
+		//Entrada - Preenchendo a matriz		
 		for(int i = 0; i < mat.length; i++) {
 			for(int j = 0; j < mat[i].length; j++) {
 				mat[i][j] = sc.nextInt();

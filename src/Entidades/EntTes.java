@@ -1,51 +1,55 @@
 package Entidades;
 
+import java.util.Date;
+
+import Entidades_enums.EnumTes;
+
+// Classe com os construtores dos objetos utilisados na classe principal
+
 public class EntTes {
 	
-	private int id;
-	private String name;
-	private double sal;
-
-	public EntTes(int id, String name, double sal) {
+	private Integer id;
+	private Date mon;
+	private EnumTes status;
+	
+	
+	public EntTes() {
+		
+	}
+	
+	public EntTes(Integer id, Date mon, EnumTes status) {
 		this.id = id;
-		this.name = name;
-		this.sal = sal;
+		this.mon = mon;
+		this.status = status;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public Date getMon() {
+		return mon;
 	}
-	public void setName(String name) {
-		this.name = name;
+
+	public void setMon(Date mon) {
+		this.mon = mon;
 	}
-	
-	public double getSal() {
-		return sal;
+
+	public EnumTes getStatus() {
+		return status;
 	}
-	public void setSal(double sal) {
-		this.sal = sal;
+
+	public void setStatus(EnumTes status) {
+		this.status = status;
 	}
-	
-	public void incSal(double percentage) {
-		sal += sal * percentage/100;
-	}
-	
+
+	@Override
 	public String toString() {
-		return id
-				+ ", "
-				+ name
-				+ ", "
-				+ sal
-				+ String.format("%.2f%n", sal);
+		return "EntTes [id=" + id + ", mon=" + mon + ", status=" + status + "]";
 	}
-	
-	
 }
 
